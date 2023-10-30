@@ -49,8 +49,7 @@
     "test-watch": "npm run test-only -- --watch",
     "test-coverage": "rimraf coverage && nyc --reporter=lcov npm run test-only && nyc report",
     "test-ci": "npm run lint && npm run test-coverage && npm run coveralls",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "install": "npm run build"
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "nyc": {
     "sourceMap": false,
